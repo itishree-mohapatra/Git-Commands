@@ -1,7 +1,7 @@
-var http=require("http");
-function onRequest(request,response)
+var http = require("http");
+function onRequest(request, response)
 {
-  response.weiteHead(200,{'content-Type':'text/plain'});
+  response.writeHead(200,{'content-Type':'text/plain'});
   response.write('Hello world');
   response.end();
 }
